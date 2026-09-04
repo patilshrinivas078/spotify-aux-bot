@@ -66,7 +66,7 @@ graph TD
 ### 1. Clone & Install Dependencies
 
 ```bash
-git clone https://github.com/patilshrinivas078/spotifyaux-bot.git
+git clone https://github.com/patilshrinivas078/spotify-aux-bot.git
 cd spotify-aux-bot
 
 # Using uv (recommended)
