@@ -12,17 +12,17 @@ Built with **LangGraph**, **Python 3.12**, **Spotify Web API**, **OpenAI GPT-4o-
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 * **Stateful Architecture:** Powered by **LangGraph**, utilizing cyclic state graphs and thread-isolated memory checkpointers to support multiple concurrent group chats independently.
 * **Hybrid NLP Parsing Pipeline:**
   * **Deterministic First (Zero Cost):** High-speed regex engine parses standard commands (`!bid`, `!balance`, `!veto`) in milliseconds for $0 API spend.
   * **LLM Fallback (`GPT-4o-mini`):** Handles complex, slang-filled, or unstructured messages via OpenAI Structured Outputs (`with_structured_output(ParsedCommand)`).
 * **⏱️ Anti-Snipe Protection Protocol:** Automatically extends the auction timer by `SNIPE_EXTENSION_SECONDS` when bids are placed in the closing seconds of a round.
-* **🎵 Dual Spotify Auth Architecture:**
+* **Auth Architecture:**
   * **Search:** Uses Spotify Client Credentials flow (public catalog search).
   * **Playback Control:** Uses Spotify Authorization Code / PKCE flow to safely push winning tracks to the host's active playback queue.
-* **elegram Long-Polling Ingress:** Runs out-of-the-box locally via **Telegram Long-Polling** (no ngrok, public URL, or open ports required).
+* **Telegram Long-Polling Ingress:** Runs out-of-the-box locally via **Telegram Long-Polling** (no ngrok, public URL, or open ports required).
 
 ---
 
@@ -66,8 +66,8 @@ graph TD
 ### 1. Clone & Install Dependencies
 
 ```bash
-git clone https://github.com/your-username/aux-cord-auction-bot.git
-cd aux-cord-auction-bot
+git clone https://github.com/patilshrinivas078/spotifyaux-bot.git
+cd spotify-aux-bot
 
 # Using uv (recommended)
 uv sync
